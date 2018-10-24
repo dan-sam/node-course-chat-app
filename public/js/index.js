@@ -12,3 +12,11 @@ socket.on('disconnect', function(){
 socket.on('newMessage', function(msg){
   console.log("New email", msg);
 });
+
+socket.on('welcomeMsg', function(msg){
+  console.log('Welcome Message', msg);
+});
+
+socket.on('newUserJoined', function(msg){
+  console.log('New User Message', msg);
+});
